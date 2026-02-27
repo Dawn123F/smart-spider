@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c4cc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #909399;
+}
+
+.el-button {
+  font-family: inherit;
+}
+
+.vue-flow__minimap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vue-flow__controls {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.vue-flow__edge-path {
+  stroke: #409EFF;
+  stroke-width: 2px;
+}
+
+.vue-flow__edge.selected .vue-flow__edge-path {
+  stroke: #67C23A;
+  stroke-width: 2.5px;
+}
+
+.vue-flow__connection-path {
+  stroke: #409EFF;
+  stroke-width: 2px;
+  stroke-dasharray: 5;
+}
+
+.vue-flow__minimap {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
